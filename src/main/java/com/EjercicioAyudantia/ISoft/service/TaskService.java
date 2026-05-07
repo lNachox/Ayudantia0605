@@ -30,6 +30,12 @@ public class TaskService {
                 .findFirst();
     }
 
+    public Optional<Task> completeTask(Long id) {
+        Optional<Task> taskOpt = findById(id);
+        taskOpt.ifPresent(task -> task.setCompletada(true));
+        return taskOpt;
+    }
+
     public List<Task> filterTasks(String prioridad, String titulo, String fechaLimite) {
     return tasks.stream()
             .filter(task -> prioridad == null || task.getPrioridad().equalsIgnoreCase(prioridad))
