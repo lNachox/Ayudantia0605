@@ -17,34 +17,43 @@ public class Task {
         this.completada = false;
     }
 
-    public void setId(Long long1) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setId'");
+    public Long getId() {
+        return id;
     }
 
-    public void setCompletada(boolean b) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setCompletada'");
-    }
-
-    public Object getId() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getId'");
-    }
-
-    public String getPrioridad() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getPrioridad'");
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitulo() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getTitulo'");
+        return titulo;
     }
 
-    public Object getFechaLimite() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getFechaLimite'");
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
+    public String getPrioridad() {
+        return prioridad;
+    }
+
+    public void setPrioridad(String prioridad) {
+        this.prioridad = prioridad;
+    }
+
+    public String getFechaLimite() {
+        return fechaLimite;
+    }
+
+    public void setFechaLimite(String fechaLimite) {
+        this.fechaLimite = fechaLimite;
+    }
+
+    public boolean isCompletada() {
+        return completada;
+    }
+
+    public void setCompletada(boolean completada) {
+        this.completada = completada;
+    }
 }
